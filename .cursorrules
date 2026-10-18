@@ -1,0 +1,6 @@
+# Cursor Rules — Klonoa Beach Volleyball Modding
+
+- Read `.modding/state.json` and `docs/MEMORY_BUS.md` for project context and discovered technical data.
+- Never write secrets to files or commit `.env`.
+- Do not commit `.bin`, `.cue`, `.iso` or BIOS files.
+- Python scripts must support both Linux and Windows (`pathlib.Path`).

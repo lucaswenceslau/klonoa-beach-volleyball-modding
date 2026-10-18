@@ -62,6 +62,18 @@ __pycache__/
 venv/
 .venv/
 .env
+.env.*
+!.env.example
+*.key
+*.pem
+*.crt
+*.cert
+*.pfx
+*.p12
+*.token
+secrets/
+private/
+credentials/
 
 # Configurações de Sistema Operacional (Interoperabilidade Linux <-> Windows)
 .DS_Store

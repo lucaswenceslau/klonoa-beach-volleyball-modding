@@ -1,0 +1,72 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "name": "klonoa-beach-volleyball-modding",
+    "target_game": "Klonoa Beach Volleyball",
+    "platform": "Sony PlayStation 1 (PSX)",
+    "game_ids": {
+      "pal_eur": "SCES-03899",
+      "pal_alt": "SCES-03901",
+      "ntsc_jap": "SLPS-03413"
+    }
+  },
+  "active_phase": {
+    "id": 1,
+    "name": "Nível 1 - Texture Replacement via DuckStation",
+    "description": "Substituição em tempo real de skins no DuckStation usando despejo e carregamento de texturas PNG sem modificar a ISO."
+  },
+  "roadmap": [
+    {
+      "phase": 1,
+      "name": "Nível 1: Texture Replacement no DuckStation",
+      "status": "in_progress"
+    },
+    {
+      "phase": 2,
+      "name": "Nível 2: Engenharia Reversa da ISO e Extração de Texturas Nativas (.TIM)",
+      "status": "pending"
+    },
+    {
+      "phase": 3,
+      "name": "Nível 3: Modelagem e Substituição de Malha 3D via Blender",
+      "status": "pending"
+    }
+  ],
+  "agent_team": {
+    "architect": "mod-architect",
+    "security": "mod-security-auditor",
+    "qa_tester": "mod-qa-tester",
+    "reverse_engineer": "ps1-reverse-engineer",
+    "asset_coder": "game-asset-coder",
+    "texture_artist": "ps1-texture-artist",
+    "modeler_3d": "ps1-3d-modeler"
+  },
+  "verified_memory_map": {
+    "ram_base": "0x80010000",
+    "vram_size_bytes": 1048576,
+    "vram_resolution": "1024x512 @ 16-bit",
+    "discovered_offsets": {}
+  },
+  "verified_actors": {
+    "klonoa": {
+      "name": "Klonoa",
+      "status": "awaiting_dump",
+      "texture_hashes": []
+    }
+  },
+  "active_tasks": [
+    {
+      "id": "TASK-001",
+      "title": "Configuração da cópia do jogo (.bin/.cue) e BIOS no emulador",
+      "assigned_to": "mod-qa-tester",
+      "status": "waiting_for_user_game_copy"
+    },
+    {
+      "id": "TASK-002",
+      "title": "Primeiro dump de texturas do Klonoa no DuckStation",
+      "assigned_to": "ps1-texture-artist",
+      "status": "pending"
+    }
+  ],
+  "last_updated": "2026-10-18T17:30:00Z"
+}
