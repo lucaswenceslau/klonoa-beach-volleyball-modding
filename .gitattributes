@@ -1,0 +1,14 @@
+# Garantir que scripts Python e Markdown usem LF de forma consistente
+* text=auto eol=lf
+
+*.py text eol=lf
+*.sh text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+
+# Binários e patches devem ser tratados como binários puros
+*.xdelta binary
+*.ppf binary
+*.tim binary
+*.tmd binary
+*.png binary

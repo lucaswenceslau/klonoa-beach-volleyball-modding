@@ -1,0 +1,70 @@
+# ==============================================================================
+# PS1 Modding - Regras de Proteção Legal e Binários Pesados
+# ==============================================================================
+
+# Imagens de Disco e ROMs (NUNCA comitar jogos comerciais)
+*.iso
+*.bin
+*.cue
+*.img
+*.mdf
+*.mds
+*.ccd
+*.sub
+*.chd
+*.pbp
+
+# BIOS do PlayStation
+*.bin
+SCPH*.BIN
+scph*.bin
+bios/
+BIOS/
+
+# Saves e Estados de Emulação
+*.mcr
+*.srm
+*.sav
+*.savestates
+*.state*
+
+# Dumps brutos de emuladores (DuckStation / PCSX-Redux)
+dump/
+dumps/
+textures/*/dump/
+*.vram
+tools/duckstation/*.AppImage
+tools/duckstation/*.zip
+tools/duckstation/*.exe
+
+# Diretórios de trabalho locais com arquivos proprietários do jogo
+extracted/
+workspace/
+build/
+dist/
+
+# Arquivos de projetos pesados / intermediários
+*.blend1
+*.blend2
+*.psd
+*.xcf
+*.tmp
+*.bak
+
+# Ghidra Project Files
+*.gpr
+*.rep/
+
+# Python & Sistema
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+.env
+
+# Configurações de Sistema Operacional (Interoperabilidade Linux <-> Windows)
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
