@@ -2,18 +2,25 @@
   "version": "1.0.0",
   "project": {
     "name": "klonoa-beach-volleyball-modding",
-    "target_game": "Klonoa Beach Volleyball",
+    "target_game": "Klonoa Beach Volley: Saikyou Team Ketteisen!",
     "platform": "Sony PlayStation 1 (PSX)",
     "game_ids": {
-      "pal_eur": "SCES-03899",
-      "pal_alt": "SCES-03901",
-      "ntsc_jap": "SLPS-03413"
+      "active_game_id": "SLPS-03433",
+      "executable": "SLPS_034.33",
+      "region": "NTSC-J (Japan)"
     }
   },
   "active_phase": {
     "id": 1,
     "name": "Nível 1 - Texture Replacement via DuckStation",
     "description": "Substituição em tempo real de skins no DuckStation usando despejo e carregamento de texturas PNG sem modificar a ISO."
+  },
+  "disc_image": {
+    "status": "verified",
+    "bin_path": "extracted/disc/original_dump/Klonoa Beach Volley - Saikyou Team Ketteisen! (Japan).bin",
+    "cue_path": "extracted/disc/original_dump/Klonoa Beach Volley - Saikyou Team Ketteisen! (Japan).cue",
+    "size_bytes": 661575264,
+    "sector_mode": "MODE2/2352"
   },
   "roadmap": [
     {
@@ -59,14 +66,15 @@
       "id": "TASK-001",
       "title": "Configuração da cópia do jogo (.bin/.cue) e BIOS no emulador",
       "assigned_to": "mod-qa-tester",
-      "status": "waiting_for_user_game_copy"
+      "status": "completed",
+      "notes": "ROM japonesa SLPS-03433 verificada e alinhada em extracted/disc/original_dump/"
     },
     {
       "id": "TASK-002",
-      "title": "Primeiro dump de texturas do Klonoa no DuckStation",
+      "title": "Primeiro boot e dump de texturas do Klonoa no DuckStation",
       "assigned_to": "ps1-texture-artist",
-      "status": "pending"
+      "status": "ready_to_run"
     }
   ],
-  "last_updated": "2026-10-18T17:30:00Z"
+  "last_updated": "2026-10-18T17:45:00Z"
 }

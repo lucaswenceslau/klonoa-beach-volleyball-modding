@@ -36,3 +36,4 @@ Este documento é a **Fonte Única de Verdade (Single Source of Truth - SSOT)** 
 | 2026-10-18 17:15 | `mod-architect` | Inicialização do repositório e time de 7 subagentes | Ambiente base configurado no Linux e pronto para Windows. |
 | 2026-10-18 17:25 | `mod-security-auditor` | Blindagem de `.gitignore` e criação de `.env.example` | Segredos, arquivos `.env` e ROMs blindados contra commit acidental. |
 | 2026-10-18 17:30 | `mod-architect` | Criação do Universal Memory Bus (`state.json` + `MEMORY_BUS.md`) | Interoperabilidade garantida entre Gemini, Claude, Antigravity e Cursor. |
+| 2026-10-18 17:45 | `ps1-reverse-engineer` | Validação da ROM em `extracted/disc/` e correção do `.cue` | Identificado Game ID `SLPS-03433` (NTSC-J), executável `SLPS_034.33`. Pronto para dump no DuckStation. |
