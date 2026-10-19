@@ -42,6 +42,7 @@ extracted/
 workspace/
 build/
 dist/
+assets/raw_dump/
 
 # Arquivos de projetos pesados / intermediários
 *.blend1
